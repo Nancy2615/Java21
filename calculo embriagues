@@ -1,0 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mycompany.proy2;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Nancy
+ */
+public class helloWord {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner entra=new Scanner(System.in);
+        System.out.println("Diametro del vaso=");
+        float diametro=entra.nextFloat();
+        System.out.println("Altura del vaso=");        
+        float altura=entra.nextFloat();
+        double volumen;
+        float pi=3.1416f;
+        float radio=diametro/2;
+        volumen=pi*Math.pow(radio, 2)*altura;
+        System.out.println("vol, de un vaso de cervesa es:"+volumen);
+        System.out.println("Con cuantos litros te emborrachas?");              
+        float litros=entra.nextFloat();
+        float mililitrosParaEmbriagarme=litros*1000;
+        double limiteVasos=mililitrosParaEmbriagarme/volumen;
+        System.out.println("Yo me meborracho con :"+limiteVasos+" vasos de cerveza");
+    }
+}
