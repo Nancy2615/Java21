@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mycompany.proy2;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Nancy
+ */
+public class helloWord {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Calendar fechaNac=new GregorianCalendar(1997,12,12);
+       Calendar fechaHoy=Calendar.getInstance();
+       int anoNac=fechaNac.get(Calendar.YEAR);
+       int anoHoy=fechaHoy.get(Calendar.YEAR);
+       int edad=anoHoy-anoNac;
+        System.out.println("Edad"+edad);
+    }
+}
